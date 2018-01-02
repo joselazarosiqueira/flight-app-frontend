@@ -1,0 +1,13 @@
+{
+  "APP_NAME": "Aplicação para listagem de voôs",
+  "COMMON": {
+    "LIST": {
+      "ALL": "Todo(a)s"
+    }
+  },
+  "API_ERROR": {
+    "INTERNAL_ERROR": "Erro interno",
+    "FLIGHT-0000": "Erro inesperado",
+    "FLIGHT-0001": "Voô não encontrado."
+  }
+}

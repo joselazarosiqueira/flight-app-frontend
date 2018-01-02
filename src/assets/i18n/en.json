@@ -1,0 +1,13 @@
+{
+  "APP_NAME": "Flight Application",
+  "COMMON": {
+    "LIST": {
+      "ALL": "All"
+    }
+  },
+  "API_ERROR": {
+    "INTERNAL_ERROR": "Internal Error",
+    "FLIGHT-0000": "Unexpected error",
+    "FLIGHT-0001": "Flight not found."
+  }
+}

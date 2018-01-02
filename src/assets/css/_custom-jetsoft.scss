@@ -1,0 +1,42 @@
+$read: #a1a1a1;
+$unread: #2e2e2e;
+
+.navbar-top {
+  .dropdown-media {
+    .media-icon {
+      color: $read;
+    }
+    .media-icon-unread {
+      color: $unread;
+    }
+
+    .media-date {
+      color: $read;
+    }
+    .media-date-unread {
+      color: $unread;
+    }
+
+    .media-title {
+      color: $read;
+      &:hover{
+        color: $unread;
+        text-decoration: underline;
+      }
+    }
+    .media-title-unread {
+      color: $unread;
+      &:hover{
+        color: $unread;
+        text-decoration: underline;
+      }
+    }
+
+    .media-message {
+      color: $read;
+    }
+    .media-message-unread {
+      color: $unread;
+    }
+  }
+}
