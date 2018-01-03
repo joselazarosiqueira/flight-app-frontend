@@ -44,6 +44,8 @@ export class FlightComponent implements OnInit {
   ];
 
   public dataSource: any;
+  public showFlightDetails: boolean = false;
+  public flightView: Flight = new Flight;
 
   constructor(
     private vcr: ViewContainerRef,
@@ -83,6 +85,18 @@ export class FlightComponent implements OnInit {
         (error: any) => {
         }
       );
+  }
+
+  public openFlight(flight: Flight){
+    this.flightService.getOne(flight.id).subscribe(
+      (value) => {
+        this.flightView = value;
+        this.showFlightDetails = true;
+      });
+  }
+
+  public close(){
+    this.showFlightDetails = false;
   }
 
   getStyle(): any {
