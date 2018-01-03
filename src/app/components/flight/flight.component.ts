@@ -33,9 +33,9 @@ export class FlightComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.flightService.getCompany()
+    this.flightService.getFlights()
       .subscribe(
-        (response: Flight) => {
+        (response: Flight[]) => {
           // to implement
         },
         (error: any) => {

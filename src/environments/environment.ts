@@ -6,7 +6,7 @@
 export const environment = {
   production: false,
   server: {
-    'localhost': 'http://localhost:4200/flight-app'
+    'localhost': 'http://localhost:8081/flight-app'
   }
 };
 

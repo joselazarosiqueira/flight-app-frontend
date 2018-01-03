@@ -1,7 +1,6 @@
 import { Flight } from './../models/flight';
 import { Observable } from 'rxjs/Rx';
 import { Http } from '@angular/http';
-import {LocationStrategy, PlatformLocation, Location} from '@angular/common';
 import { Router } from '@angular/router';
 import { Injectable } from '@angular/core';
 import { AppSettings } from '../app-setting';
@@ -12,14 +11,14 @@ export class FlightService {
 
   private static METHOD_SERVICE_FINDALL = '/flights';
 
-  constructor(private http: Http, location: Location) { }
+  constructor(private http: Http) { }
 
-  public getCompany() {
+  public getFlights() {
     const endpoint = environment.server.localhost +
     FlightService.METHOD_SERVICE_FINDALL;
     return this.http.get(endpoint)
        .map((response) => {
-         return response.json() as Flight;
+         return response.json() as Flight [];
        });
   }
 
