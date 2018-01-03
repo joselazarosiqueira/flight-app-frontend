@@ -37,9 +37,10 @@ export class FlightComponent implements OnInit {
     { value: 'flightNumber', display: 'Número' },
     { value: 'from', display: 'Origem' },
     { value: 'to', display: 'Destino' },
-    { value: 'departureDateTime', display: 'Data/Hora de Partida' },
-    { value: 'arrivalDateTime', display: 'Data/Hora de Chegada' },
-    { value: 'status', display: 'Status' }
+    { value: 'departureDateTime', display: 'Partida' },
+    { value: 'arrivalDateTime', display: 'Chegada' },
+    { value: 'status', display: 'Status' },
+    { value: 'id', display: 'id'}
   ];
 
   public dataSource: any;

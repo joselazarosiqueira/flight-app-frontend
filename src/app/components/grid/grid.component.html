@@ -20,13 +20,13 @@
       <mat-table #table [dataSource]="dataSource" matSort (matSortChange)="sortData($event)">
         <!-- ID Column -->
         <ng-container matColumnDef="id">
-          <mat-header-cell *matHeaderCellDef> {{'MODULE.PROSPECTION.MEETING.ATTRIBUTES.ACTIONS_TEXT' | translate}} </mat-header-cell>
+          <mat-header-cell *matHeaderCellDef> Ações </mat-header-cell>
           <mat-cell *matCellDef="let row">
             <a *ngIf="removable" [routerLink]="" (click)="removeWithoutMessageConfirmation(row)">
               <mat-icon>delete forever</mat-icon>
             </a>
             <a *ngIf="editable" [routerLink]="" (click)="open(row)">
-              <mat-icon>edit</mat-icon>
+              <mat-icon>visibility</mat-icon>
             </a>
           </mat-cell>
         </ng-container>
