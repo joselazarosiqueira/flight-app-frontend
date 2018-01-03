@@ -76,8 +76,8 @@ export class GridComponent implements OnInit {
 
   constructor(
     public router: Router,
-    public translateService: TranslateService,
-    private exceptionService: ExceptionService
+    public translateService: TranslateService
+    // private exceptionService: ExceptionService
   ) { }
 
   public ngOnInit() {
@@ -87,8 +87,8 @@ export class GridComponent implements OnInit {
     });
 
     this.dataSource.connect().subscribe(
-      (value) => this.loadedData = value,
-      (error: any) => this.exceptionService.handlerApiError(error)
+      (value) => this.loadedData = value
+      // (error: any) => this.exceptionService.handlerApiError(error)
     );
 
     if (this.filtered === true) {
