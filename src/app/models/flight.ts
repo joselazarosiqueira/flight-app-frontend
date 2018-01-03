@@ -1,6 +1,14 @@
+import { Airplane } from './airplane';
+import { Pilot } from './pilot';
+import { City } from './city';
 export class Flight {
-  domain: string;
-  businessNumber: string;
-
-  constructor(domain: string, businessNumber: string) {}
+  id: number;
+  flightNumber: string;
+  to: City;
+  from: City;
+  departureDateTime: any;
+  arrivalDateTime: any;
+  status: string;
+  pilot: Pilot;
+  airplane: Airplane;
 }
