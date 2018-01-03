@@ -5,6 +5,15 @@
       "ALL": "Todo(a)s"
     }
   },
+  "FLIGHT": {
+    "STATUS":{
+      "LANDED":"Pousado",
+      "CANCELLED":"Cancelado",
+      "WAITING": "Aguardando",
+      "FLYING": "Voando",
+      "DELAYED": "Atrasado"
+    }
+  },
   "API_ERROR": {
     "INTERNAL_ERROR": "Erro interno",
     "FLIGHT-0000": "Erro inesperado",
