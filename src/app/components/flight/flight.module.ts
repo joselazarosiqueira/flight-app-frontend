@@ -1,3 +1,5 @@
+import { ExceptionService } from './../../services/exception.service';
+import { GridModule } from './../grid/grid.module';
 import { MaterializeModule } from 'ng2-materialize';
 import { Routes, RouterModule } from '@angular/router';
 import { HttpModule } from '@angular/http';
@@ -27,10 +29,12 @@ export const RoutingLogin = RouterModule.forChild(routes);
     ReactiveFormsModule,
     MaterializeModule,
     MaterialModules,
-    SharedModule
+    SharedModule,
+    GridModule
   ],
   providers: [
     FlightService,
+    ExceptionService
   ],
 })
 export class FlightModule { }
