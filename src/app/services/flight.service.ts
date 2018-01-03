@@ -22,6 +22,15 @@ export class FlightService {
        });
   }
 
+  public getOne(id: any) {
+    const endpoint = environment.server.localhost +
+    FlightService.METHOD_SERVICE_FINDALL;
+    return this.http.get(endpoint + '/' + id)
+       .map((response) => {
+         return response.json() as Flight;
+       });
+  }
+
   private handleError(error: Response) {
     return Observable.throw(error.json() || 'Server error');
   }
