@@ -1,4 +1,17 @@
-<!-- To implement -->
-<p>
-  Teste
-</p>
+
+<div class="card-panel">
+  <div class="row">
+    <div class="col s8">
+      <app-grid
+        *ngIf="dataSource"
+        [defColumns]="defColumnsGrid"
+        [removable]="false"
+        [editable]="false"
+        [dataSource]="dataSource"
+        hideAddButton="true"
+        filterLabel="Filtrar Resultados">
+      </app-grid>
+    </div>
+  </div>
+</div>
+
